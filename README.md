@@ -5,7 +5,6 @@ Proyecto académico correspondiente a las **Series I y II**. Permite registrar p
 ## Enlaces
 
 - GitHub: https://github.com/MadelinCeron/AtencionCiudadana
-- Render: pendiente de configurar.
 
 ## Funcionalidades
 
