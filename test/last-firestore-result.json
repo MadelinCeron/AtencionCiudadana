@@ -1,0 +1,13 @@
+{
+  "id": "rzWzeL9oxKPcy5yQyO19",
+  "fecha": "2026-11-14T16:24:54.133Z",
+  "documentBytes": 2018,
+  "lecturaReal": true,
+  "escrituraReal": true,
+  "apiPanel": true,
+  "persistenciaTrasReinicio": true,
+  "sinFoto": 400,
+  "claveIncorrecta": 401,
+  "navegadorReal": false,
+  "nota": "Envío por HTTP; la interfaz se prueba por separado. Reporte ficticio conservado para demostración."
+}

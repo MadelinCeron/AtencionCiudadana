@@ -1,0 +1,13 @@
+{
+  "name": "atencion-ciudadana",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "test": "node --test test/frontend.test.js",
+    "test:firestore": "node --env-file=.env test/firestore.integration.js"
+  },
+  "dependencies": {
+    "firebase-admin": "^13.0.0"
+  }
+}

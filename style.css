@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
+* { box-sizing: border-box }
+[hidden] { display: none !important }
+body { margin: 0; background: #edf4f2; color: #122e2a; font: 16px/1.5 'Instrument Sans', system-ui, sans-serif }
+header { background: #103b34; color: white; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 14px; padding: 18px clamp(20px, 6vw, 86px) }
+nav { display: flex; gap: 18px }
+a { color: inherit; text-underline-offset: 4px }
+main { width: min(760px, 92%); margin: clamp(28px, 6vw, 76px) auto }
+h1 { font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.1; margin: 0 }
+p { overflow-wrap: anywhere }
+form, article { background: white; padding: clamp(18px, 4vw, 32px); border: 1px solid #c7dad3; border-radius: 16px }
+form { display: grid; gap: 16px }
+label { display: grid; gap: 6px; font-weight: 600 }
+input, textarea, select, button { font: inherit; border-radius: 8px; padding: 10px 12px }
+input, textarea, select { width: 100%; border: 1px solid #8ca8a0; background: #f9fcfb; color: inherit }
+textarea { resize: vertical }
+button { justify-self: start; border: 0; background: #146452; color: white; font-weight: 700; cursor: pointer }
+button:disabled { opacity: .6; cursor: wait }
+:focus-visible { outline: 3px solid #ad620e; outline-offset: 3px }
+article { margin-bottom: 16px }
+article img { display: block; max-width: 100%; max-height: 420px; border-radius: 8px }
+article .description { white-space: pre-wrap }
+[data-error] { color: #a02020; font-weight: 600 }

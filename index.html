@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atención ciudadana</title>
+<link rel="stylesheet" href="/style.css">
+<script src="/app.js" type="module"></script>
+</head>
+<body>
+<header><strong>Atención ciudadana</strong><nav><a href="/">Portal ciudadano</a><a href="/admin">Panel municipal</a></nav></header>
+<main>
+<section id="portal" hidden>
+<h1>Registrar un reporte</h1>
+<p>Informa de un problema en tu comunidad y adjunta una fotografía del lugar.</p>
+<form id="report">
+<label>Categoría<select name="categoria" required>
+<option value="">Selecciona una categoría</option>
+<option>Alumbrado</option><option>Calles</option><option>Limpieza</option><option>Agua</option><option>Otro</option>
+</select></label>
+<label>Ubicación<input name="ubicacion" required minlength="3" maxlength="150" placeholder="Barrio, calle o punto de referencia"></label>
+<label>Descripción<textarea name="descripcion" required minlength="10" maxlength="1500" rows="5" placeholder="Describe el problema que observaste"></textarea></label>
+<label>Fotografía<input name="foto" type="file" accept="image/jpeg,image/png,image/webp" required></label>
+<button>Enviar reporte</button>
+</form>
+<p id="notice" role="status"></p>
+</section>
+<section id="admin" hidden>
+<h1>Reportes municipales</h1>
+<p>Consulta los reportes registrados, desde el más reciente.</p>
+<form id="access"><label>Clave municipal<input name="key" type="password" required></label><button>Consultar reportes</button></form>
+<p id="adminNotice" role="status"></p>
+<div id="records"></div>
+<button id="next" hidden>Cargar más reportes</button>
+</section>
+</main>
+</body>
+</html>
